@@ -2,19 +2,7 @@
 
 Tento projekt simuluje podnikovou lokální síť (LAN) se dvěma switchi, klientskými počítači a servery poskytujícími služby DHCP, DNS a HTTP.
 
-## 1. Výpočet podsítě (X)
-
-Výpočet hodnoty **X** byl proveden na základě součtu ordinálních hodnot (ASCII) písmen příjmení modulo 256.
-
-* **Příjmení:** [DOPLŇ SVÉ PŘÍJMENÍ - např. NOVAK]
-* **Výpočet:** [DOPLŇ SOUČET - např. 78+79+86+65+75] = [CELKEM]
-* **Výsledek (X):** [CELKEM] mod 256 = **[TVOJE X]**
-
-**Přidělený rozsah:** 192.168.[TVOJE X].0 / 24
-
----
-
-## 2. Popis sítě
+## 1. Popis sítě
 
 Síť se skládá z následujících prvků:
 * **S1 (Switch):** Připojuje PC1 a PC2.
@@ -25,7 +13,7 @@ Síť se skládá z následujících prvků:
 
 ---
 
-## 3. Dokumentace a screenshoty
+## 2. Dokumentace a screenshoty
 
 ### Konfigurace switche přes Laptop
 Nastavení hostname a zabezpečení linky console/vty pomocí terminálu.
@@ -50,5 +38,5 @@ Konfigurace HTTP služby s upraveným souborem index.html.
 
 ---
 
-## 4. Závěr
+## 3. Závěr
 Všechny služby jsou plně funkční. PC2 úspěšně získává adresu z DHCP, PC1 dokáže přeložit doménové jméno a zobrazit webovou stránku běžící na SRV2.
